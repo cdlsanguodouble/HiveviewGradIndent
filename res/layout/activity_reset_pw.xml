@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:background="#CAC0D5">
+    <include layout="@layout/head_back"/>
+    <LinearLayout android:layout_width="280dp"
+                  android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+        <TextView android:layout_width="wrap_content" android:layout_height="40dp"
+                android:text="忘记密码"
+                android:textSize="31dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="请验证您的手机号并重置密码"
+                android:textSize="16dp"
+                android:layout_marginTop="30dp"
+                />
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            <EditText android:layout_width="match_parent" android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:hint="请输入手机号码"
+                    android:id="@+id/et_phone_num"/>
+            <Button android:layout_width="match_parent" android:layout_height="34dp"
+                    android:layout_weight="5"
+                    android:text="验证"
+                    android:id="@+id/btn_verification"
+                    android:background="#FFCC00"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <EditText android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="请输入验证码"
+                android:id="@+id/et_verification_code"
+                />
+        <EditText android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="请输入新密码"
+                android:id="@+id/et_password"/>
+        <Button android:layout_width="match_parent" android:layout_height="40dp"
+                android:text="重置密码"
+                android:textColor="@android:color/white"
+                android:background="#FFCC00"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_reset_password"/>
+
+    </LinearLayout>
+</RelativeLayout>

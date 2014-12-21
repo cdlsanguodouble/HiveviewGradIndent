@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+        android:background="#663399">
+    <ImageView android:layout_width="65dp" android:layout_height="40dp"
+            android:background="@drawable/head_more"
+            android:clickable="true"
+            android:id="@+id/iv_head_more"
+            android:layout_alignParentRight="true"/>
+</RelativeLayout>
